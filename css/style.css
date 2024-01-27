@@ -22,9 +22,9 @@ body, input {
 }
 
 main {
-    width: 80vw;
-    height: 80vh;
-    margin: 10vh 8vw 10vh 12vw;
+    width: 100vw;
+    height: 100vh;
+    margin: 10vh 8vw 0 12vw;
     display: flex;
     gap: 1vw;
 }
@@ -62,7 +62,7 @@ main {
     background: rgba(0,0,0,0.6);
     clip-path: polygon(calc(100% - 30px) 0, 100% 30px, 100% calc(100% - 30px), calc(100% - 30px) 100%, 30px 100%, 0 calc(100% - 30px), 0 30px, 30px 0);
     border-left: 5px solid var(--main-cinza);
-    height: 80%;
+    height: 100%;
 }
 
 /****************************** Equipamentos *****/
@@ -216,7 +216,7 @@ main {
     main {
         width: 90vw;
         height: 80vh;
-        margin: 5vh auto;
+        margin: .3rem auto;
     }
 }
 
@@ -225,9 +225,29 @@ main {
         font-size: 13px;
     }
 
+    .montador-conteudo {
+        padding: 0 10%;
+    }
+
     main {
         width: 96vw;
         height: 80vh;
         margin: 10vh auto;
     }
+}
+
+/* ********************************* seletor de mini robotrons ********************************* */
+ul, li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.mini-robotron {
+    width: 100px;
+    height: 100px;
+}
+
+.trocar_skil-robotron{
+    display: flex;
+    justify-content: center;
 }
