@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+ul, li {
+    list-style: none;
+}
+
 body {
     background: url(../img/fundo.jpg);
     background-position: center center;
@@ -43,6 +47,12 @@ main {
     position: absolute;
     left: -20%;
     top: -5%;
+    transition: 250ms;
+}
+
+.robo:hover{
+    transform: scale(1.1);
+    top: 5%;
 }
 
 .titulo {
@@ -125,6 +135,11 @@ main {
     text-align: center;
     border: 3px solid var(--main-cinza);
     cursor: pointer;
+    transition: 200ms;
+}
+
+.controle-ajuste:hover{
+    transform: scale(1.1);
 }
 
 .linha {
@@ -147,7 +162,6 @@ main {
     background: var(--main-preto);
     color: var(--main-branco)
 }
-
 
 
 /****************************** Estatísticas *****/
@@ -209,6 +223,24 @@ main {
     margin: 10px 0 0;
 }
 
+/* ********************************* seletor de mini robotrons ********************************* */
+
+.mini-robotron {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    transition: 400ms ;
+}
+
+.mini-robotron:hover{
+transform: scale(1.25);
+}
+
+.trocar_skil-robotron{
+    display: flex;
+    justify-content: center;
+}
+
 @media screen and (max-width: 1600px) {
     body { 
         font-size: 14px;
@@ -234,20 +266,4 @@ main {
         height: 80vh;
         margin: 10vh auto;
     }
-}
-
-/* ********************************* seletor de mini robotrons ********************************* */
-ul, li {
-    text-decoration: none;
-    list-style: none;
-}
-
-.mini-robotron {
-    width: 100px;
-    height: 100px;
-}
-
-.trocar_skil-robotron{
-    display: flex;
-    justify-content: center;
 }
